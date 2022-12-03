@@ -5,11 +5,13 @@
 import sys
 from typing import TextIO
 
+from algs4py.utils.std_out import StdOut
+
 
 class StdIn:
     """Overview"""
 
-    def __init__(self):
+    def __init__(self) -> None:
 
         # Assume UTF-8 encoding for std input.
         self.CHARSET_NAME: str = "UTF-8"
@@ -72,3 +74,18 @@ class StdIn:
             str: A char from the standard input.
         """
         return self.input.read(1)
+
+    def read_string(self) -> str:
+        """Read a string from the std in.
+
+        Returns:
+            str: A string from the standard input.
+        """
+        return str(self.input.read())
+
+
+if __name__ == "__main__":
+    StdOut().print("Type a string: ")
+    s = StdIn().read_string()
+    StdOut.println("test")
+    StdOut.println()

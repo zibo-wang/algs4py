@@ -1,5 +1,6 @@
-from algs4py.utils.std_in import StdIn
+import pytest
 
+from algs4py.utils.std_in import StdIn
 
 
 def test_has_next_line():

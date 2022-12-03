@@ -33,7 +33,7 @@ class StdOut:
 
         """
         if x is None:
-            print(file=self.output)
+            print("\n", file=self.output)
         else:
             print(x, file=self.output)
         self.output.flush()
@@ -46,10 +46,10 @@ class StdOut:
 
         """
         if x is None:
-            self.output.flush()
+            print("", end="", file=self.output)
         else:
             print(x, end="", file=self.output)
-            self.output.flush()
+        self.output.flush()
 
     def printf(
         self, fmt: str, *args: Any, new_locale: Optional[str] = None
@@ -77,7 +77,6 @@ if __name__ == "__main__":
     StdOut().println(17)
     StdOut().print()
     StdOut().print(True)
-    StdOut().println()
     StdOut().printf("%.6f\n", 1.0 / 7.0)
     StdOut().printf("%f%n", 5.1473)
     StdOut().printf("'%5.2e'%n", 5.1473)
