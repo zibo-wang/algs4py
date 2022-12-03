@@ -17,19 +17,25 @@ algs4py
 
 This project is a Python implementation of the algorithms in the book Algorithms, 4th Edition by Robert Sedgewick and Kevin Wayne, you can find the online book here: https://algs4.cs.princeton.edu. The project is still under development. The following algorithms are implemented:
 
-.. list-table:: Implemented Algorithms
-   :widths: 25 25 50
+.. list-table:: Checklist
+   :widths: 25 25 25 25 10
    :header-rows: 1
 
-   * - Heading row 1, column 1
-     - Heading row 1, column 2
-     - Heading row 1, column 3
-   * - Row 1, column 1
-     -
-     - Row 1, column 3
-   * - Row 2, column 1
-     - Row 2, column 2
-     - Row 2, column 3
+   * - Chapter
+     - Name
+     - Program
+     - Path
+     - Checklist
+   * - 0
+     - Input and Output Libs
+     - std_in.py
+     - /utils/
+     - no
+   * - 
+     - 
+     - std_out.py
+     - /utils/
+     - no
 
 
 Name Conventions
