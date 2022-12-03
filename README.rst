@@ -23,11 +23,12 @@
         :alt: Twitter
         :target: https://twitter.com/algo4py
 
-.. image:: https://img.shields.io/badge/-PyScaffold-005CA0?logo=pyscaffold
+.. |made-with-pyscaffold|image:: https://img.shields.io/badge/-PyScaffold-005CA0?logo=pyscaffold
     :alt: Project generated with PyScaffold
     :target: https://pyscaffold.org/
 
-|
+.. |made-with-python| image:: https://img.shields.io/badge/Made%20with-Python-1f425f.svg
+   :target: https://www.python.org/
 
 =======
 algo4py
