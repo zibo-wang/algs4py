@@ -36,6 +36,11 @@ This project is a Python implementation of the algorithms in the book Algorithms
      - std_out.py
      - /utils/
      - no
+   * -
+     - 
+     - std_draw.py
+     - /utils/
+     - no
 
 
 Name Conventions
