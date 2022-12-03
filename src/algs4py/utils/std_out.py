@@ -33,9 +33,9 @@ class StdOut:
 
         """
         if x is None:
-            print("\n", file=self.output)
+            print("", end="\n", file=self.output)
         else:
-            print(x, file=self.output)
+            print(x, end="\n", file=self.output)
         self.output.flush()
 
     def print(self, x: Optional[Any] = None) -> None:

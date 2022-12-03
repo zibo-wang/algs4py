@@ -85,7 +85,4 @@ class StdIn:
 
 
 if __name__ == "__main__":
-    StdOut().print("Type a string: ")
-    s = StdIn().read_string()
-    StdOut.println("test")
-    StdOut.println()
+    StdOut.print("Type")
