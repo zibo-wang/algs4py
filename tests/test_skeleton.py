@@ -4,7 +4,7 @@ from algo4py.skeleton import fib, main
 
 __author__ = "Zibo Wang"
 __copyright__ = "Zibo Wang"
-__license__ = "MIT"
+__license__ = "Apache License 2.0"
 
 
 def test_fib():
