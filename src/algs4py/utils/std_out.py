@@ -62,12 +62,13 @@ class StdOut:
             locale (Optional[str], optional): The locale. Defaults to None.
 
         """
+        fmt = fmt.replace("%n", "\n")
+        fmt = fmt.replace("%,d ", "%d")
         if locale is None:
-            self.output.write(fmt % args)
+            locale.setlocale(locale.LC_ALL, self.LOCALE)
         else:
             locale.setlocale(locale.LC_ALL, new_locale)
-            self.output.write(fmt % args)
-            locale.setlocale(locale.LC_ALL, self.LOCALE)
+        self.output.write(locale.format_string(fmt, args, grouping=True))
         self.output.flush()
 
 
@@ -78,3 +79,6 @@ if __name__ == "__main__":
     StdOut().print(True)
     StdOut().println()
     StdOut().printf("%.6f\n", 1.0 / 7.0)
+    StdOut().printf("%f%n", 5.1473)
+    StdOut().printf("'%5.2e'%n", 5.1473)
+    StdOut().printf("%,d %n", 12000, new_locale="en_US")
