@@ -1,8 +1,8 @@
 =======
-algo4py
+algs4py
 =======
 
-This is the documentation of **algo4py**.
+This is the documentation of **algs4py**.
 
 .. note::
 

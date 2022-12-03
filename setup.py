@@ -1,5 +1,5 @@
 """
-    Setup file for algo4py.
+    Setup file for algs4py.
     Use setup.cfg to configure your project.
 
     This file was generated with PyScaffold 4.3.

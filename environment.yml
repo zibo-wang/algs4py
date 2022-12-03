@@ -1,4 +1,4 @@
-name: algo4py
+name: algs4py
 channels:
   - defaults
   - conda-forge

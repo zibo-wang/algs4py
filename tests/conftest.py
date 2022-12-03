@@ -1,5 +1,5 @@
 """
-    Dummy conftest.py for algo4py.
+    Dummy conftest.py for algs4py.
 
     If you don't know what this is for, just leave it empty.
     Read more about conftest.py under:

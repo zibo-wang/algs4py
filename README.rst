@@ -8,7 +8,7 @@
    :target: https://pyscaffold.org/
     
 =======
-algo4py
+algs4py
 =======
 
 

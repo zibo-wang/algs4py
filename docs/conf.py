@@ -8,8 +8,8 @@
 # serve to show the default.
 
 import os
-import sys
 import shutil
+import sys
 
 # -- Path setup --------------------------------------------------------------
 
@@ -34,7 +34,7 @@ except ImportError:
     from sphinx import apidoc
 
 output_dir = os.path.join(__location__, "api")
-module_dir = os.path.join(__location__, "../src/algo4py")
+module_dir = os.path.join(__location__, "../src/algs4py")
 try:
     shutil.rmtree(output_dir)
 except FileNotFoundError:
@@ -87,7 +87,7 @@ source_suffix = ".rst"
 master_doc = "index"
 
 # General information about the project.
-project = "algo4py"
+project = "algs4py"
 copyright = "2022, Zibo Wang"
 
 # The version info for the project you're documenting, acts as replacement for
@@ -99,7 +99,7 @@ copyright = "2022, Zibo Wang"
 # If you don’t need the separation provided between version and release,
 # just set them both to the same value.
 try:
-    from algo4py import __version__ as version
+    from algs4py import __version__ as version
 except ImportError:
     version = ""
 
@@ -229,7 +229,7 @@ html_static_path = ["_static"]
 # html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = "algo4py-doc"
+htmlhelp_basename = "algs4py-doc"
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -246,7 +246,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-    ("index", "user_guide.tex", "algo4py Documentation", "Zibo Wang", "manual")
+    ("index", "user_guide.tex", "algs4py Documentation", "Zibo Wang", "manual")
 ]
 
 # The name of an image file (relative to this directory) to place at the top of

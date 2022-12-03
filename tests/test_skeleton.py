@@ -1,6 +1,6 @@
 import pytest
 
-from algo4py.skeleton import fib, main
+from algs4py.skeleton import fib, main
 
 __author__ = "Zibo Wang"
 __copyright__ = "Zibo Wang"
