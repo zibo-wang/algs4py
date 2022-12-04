@@ -4,7 +4,7 @@
 .. image:: https://img.shields.io/badge/Made%20with-Python-1f425f.svg
    :target: https://www.python.org/
 
-.. image:: https://img.shields.io/badge/Generated%20with-pyscaffold-0a0a0a.svg
+.. image:: https://img.shields.io/badge/Generated%20with-pyscaffold-1f425f.svg
    :target: https://pyscaffold.org/
     
 =======
