@@ -5,8 +5,10 @@ https://algs4.cs.princeton.edu/11model/Binomial.java.html
 """
 
 import sys
+from typing import Any
 
 import numpy as np
+import numpy.typing as npt
 
 
 class Binomial:
@@ -33,7 +35,7 @@ class Binomial:
             n - 1, k - 1, p
         )
 
-    def binomial2(self, n: int, k: int, p: float) -> float:
+    def binomial2(self, n: int, k: int, p: float) -> Any:
         """Binomial coefficient.
 
         Args:
@@ -42,11 +44,12 @@ class Binomial:
             p: Probability of success.
 
         Returns:
-            float: Binomial coefficient.
+            Any: Binomial coefficient. (Might be float or int.)
+                Type hint for this one is due to pow function.
 
         """
         # TODO: add type hint
-        b = np.zeros((n + 1, k + 1))
+        b: npt.NDArray[np.float64] = np.zeros((n + 1, k + 1))
 
         for i in range(n + 1):
             b[i][0] = pow(1.0 - p, i)
